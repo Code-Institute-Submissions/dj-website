@@ -1,0 +1,24 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "dj-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrenfrancis/dj-website.git"
+  },
+  "keywords": [
+    "dj",
+    "website",
+    "angular"
+  ],
+  "author": "darrenfrancis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darrenfrancis/dj-website/issues"
+  },
+  "homepage": "https://github.com/darrenfrancis/dj-website#readme"
+}
