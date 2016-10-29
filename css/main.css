@@ -1,0 +1,17 @@
+.home-content {
+	background-color: #eee;
+	margin: 10px 5px 20px 5px;
+	padding: 10px;
+	height: 300px;
+}
+
+footer {
+	margin-top: 15px;
+	padding: 20px;
+	background-color: #eee;
+	height: 250px;
+}
+
+/*.sc_embed {
+	padding: 10px;
+}*/
