@@ -22,13 +22,15 @@
 			<div class="home-content">
 				<h2>Gigs</h2>
 				<div>
-					<ul class="list-group">
-						<li class="list-group-item">Gig 1</li>
-						<li class="list-group-item">Gig 2</li>
-						<li class="list-group-item">Gig 3</li>
-						<li class="list-group-item">Gig 4</li>
-					</ul>
-					<button type="button" class="btn btn-primary">See more gigs</button>
+					<div class="listings">
+						<div ng-repeat="gig in gigList | limitTo : gigLimit">
+							<h3>{{gig.date}}</h3>
+							<h4>{{gig.club}}, {{gig.city}}, {{gig.country}}</h4>
+							<a href="{{gig.fbEvent}}">Glyphicon</a>
+							<a href="{{gig.ticketUrl}}">Glyphicon</a>
+						</div>
+					</div>
+					<a href="#/gigs"><button type="button" class="btn btn-primary">See more gigs</button></a>
 				</div>
 			</div>
 		</div>
@@ -39,7 +41,7 @@
 		<div class="col-sm-6">
 			<div class="home-content">
 				<h2>Mixes</h2>
-				<div class="sc_embed">
+				<div>
 					<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</div>
 			</div>
@@ -55,13 +57,13 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="http://baconmockup.com/500/200/" alt="First Slide">
+							<img src="{{djShopProd.img1}}" alt="First Slide">
 						</div>
 						<div class="item">
-							<img src="http://baconmockup.com/500/200/" alt="Second Slide">
+							<img src="{{djShopProd.img2}}" alt="Second Slide">
 						</div>
 						<div class="item">
-							<img src="http://baconmockup.com/500/200/" alt="Third Slide">
+							<img src="{{djShopProd.img3}}" alt="Third Slide">
 						</div>
 					</div>
 					<a class="left carousel-control" href="#/#dj-shop-carousel" role="button" data-slide="prev">

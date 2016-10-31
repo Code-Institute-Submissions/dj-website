@@ -1,3 +1,27 @@
 <div>
-	<h1>{{title}}</h1>
+	<!-- Gigs Hero -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Gigs</h1>
+			<p>Check out the latest gigs here</p>
+			<button type="button" class="btn btn-primary btn-lg" href="#">Learn More</button>
+		</div>
+	</div>
+
+	<!-- Gig listing -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<div class="listings">
+					<div ng-repeat="gig in gigList">
+						<h3>{{gig.date}}</h3>
+						<h4>{{gig.club}}, {{gig.city}}, {{gig.country}}</h4>
+						<a href="{{gig.fbEvent}}">Glyphicon</a>
+						<a href="{{gig.ticketUrl}}">Glyphicon</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+

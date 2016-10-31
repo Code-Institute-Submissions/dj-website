@@ -3,6 +3,17 @@
 	margin: 10px 5px 20px 5px;
 	padding: 10px;
 	height: 300px;
+	z-index: 0;
+}
+
+.tl {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #000;
+	border: 5px #FFF;
+	z-index: 1;
+
 }
 
 footer {
@@ -10,6 +21,17 @@ footer {
 	padding: 20px;
 	background-color: #eee;
 	height: 250px;
+	z-index: 0;
+}
+
+#row1 {
+	margin-bottom: 300px;
+
+}
+
+.listings {
+	display: inline-block;
+
 }
 
 /*.sc_embed {
