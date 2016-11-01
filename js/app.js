@@ -1,4 +1,4 @@
-angular.module('DjWebsite', ['ngRoute', 'RouteController', 'NavDirective', 'FooterDirective',]);
+angular.module('DjWebsite', ['ngRoute', 'RouteController', 'NavDirective', 'FooterDirective', 'RelatedDirective', 'RelatedContentService']);
 
 angular.module('DjWebsite').config(function($routeProvider) {
 

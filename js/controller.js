@@ -1,11 +1,16 @@
 angular.module('RouteController', [])
-	.controller('HomeController', function($scope, $location) {
+	.controller('HomeController', function($scope, $location, RelContService) {
 		$scope.title = "DJ Website";
 
 		$scope.gigList = allGigs;
 		$scope.gigLimit = 2;
 		$scope.djShopProd = djTShirtBlack;
 		console.log($scope.djShopProd.img1);
+
+		$scope.contents = function(getContent) {
+			return RelContService.getContent;
+		}
+		console.log($scope.contents);
 	})
 
 	.controller('MixesController', function($scope, $location) {
@@ -19,6 +24,7 @@ angular.module('RouteController', [])
 
 		$scope.tracks = dnbTracks;
 		
+
 
 		
 
@@ -38,5 +44,9 @@ angular.module('RouteController', [])
 	.controller('ContactController', function($scope, $location) {
 		$scope.title = "Contact";
 	})
+
+
+
+
 
 
