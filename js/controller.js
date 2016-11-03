@@ -1,19 +1,44 @@
 angular.module('RouteController', [])
-	.controller('HomeController', function($scope, $location, RelContService) {
-		$scope.title = "DJ Website";
+	.controller('HomeController', function($scope, $location, RelContService, GigService) {
+		//Page title
+		//$scope.title = "DJ Website";
 
-		$scope.gigList = allGigs;
+		// Gigs content controller
+		var url = "/data/gigs.json";
+
+		$scope.gigList = {};
+
+		GigService.getGigs(url , $scope.data).then(function(results) {
+			$scope.gigList = results.data;
+			console.log($scope.gigList);
+        }).catch(function(err) {
+            console.log(err);
+        });	
+		
+		//Related Content controller
+		var url = "/data/djContent.json";
+
+		$scope.contents = {};
+
+		RelContService.getContent(url , $scope.data).then(function(results) {
+			$scope.contents = results.data;
+			console.log($scope.contents);
+        }).catch(function(err) {
+            console.log(err);
+        });	
+
+
+		//$scope.gigList = allGigs;
 		$scope.gigLimit = 2;
-		$scope.djShopProd = djTShirtBlack;
-		console.log($scope.djShopProd.img1);
+		//$scope.djShopProd = djTShirtBlack;
+		//console.log($scope.djShopProd.img1);
 
-		$scope.contents = function(getContent) {
-			return RelContService.getContent;
-		}
-		console.log($scope.contents);
+		
 	})
 
-	.controller('MixesController', function($scope, $location) {
+	.controller('MixesController', function($scope, $location, TrackService) {
+		
+		//Tracklist show/hide
 		$scope.tracklist = true;
 		$scope.showTl = function() {
 			$scope.tracklist = false;
@@ -22,7 +47,19 @@ angular.module('RouteController', [])
 			$scope.tracklist = true;
 		};
 
-		$scope.tracks = dnbTracks;
+		
+
+		// Tracklisting controller
+		var url = "/data/tracks.json";
+
+		$scope.tracks = {}
+
+		TrackService.getTracks(url , $scope.data).then(function(results) {
+			$scope.tracks = results.data;
+			console.log($scope.tracks);
+        }).catch(function(err) {
+            console.log(err);
+        });	
 		
 
 
@@ -31,10 +68,23 @@ angular.module('RouteController', [])
 
 	})
 
-	.controller('GigsController', function($scope, $location) {
+	.controller('GigsController', function($scope, $location, GigService) {
 		$scope.title = "Gigs";
 
-		$scope.gigList = allGigs;
+		// Gigs content controller
+		var url = "/data/gigs.json";
+
+		$scope.gigList = {};
+
+		GigService.getGigs(url , $scope.data).then(function(results) {
+			$scope.gigList = results.data;
+			console.log($scope.gigList);
+        }).catch(function(err) {
+            console.log(err);
+        });	
+
+
+        console.log(results.date);
 	})
 
 	.controller('ShopController', function($scope, $location) {

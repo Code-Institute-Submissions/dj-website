@@ -1,4 +1,5 @@
-var relContent = [
+{
+	"relContent" : [
 	{
 		headline: "Review of mix cd",
 		descrption: "Resident Advisor recently reviewed the latest album",
@@ -25,3 +26,4 @@ var relContent = [
 		imgUrl: "http://www.theplayground.co.uk/wp-content/uploads/2015/09/residentadvisor.png"
 	}
 	]
+}
