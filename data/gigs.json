@@ -1,5 +1,4 @@
-{
-	"allGigs" : [
+[
 {
 	"date": "02/11/16",
 	"club": "TBA",
@@ -88,4 +87,3 @@
 	"fbEvent": "https://www.facebook.com/event",
 	"ticketUrl": "https://www.residentadvisor.net/event.aspx?865836"
 }]
-}

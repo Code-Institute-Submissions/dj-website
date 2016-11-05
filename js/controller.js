@@ -14,6 +14,7 @@ angular.module('RouteController', [])
         }).catch(function(err) {
             console.log(err);
         });	
+		$scope.gigLimit = 2;
 		
 		//Related Content controller
 		var url = "/data/djContent.json";
@@ -29,7 +30,7 @@ angular.module('RouteController', [])
 
 
 		//$scope.gigList = allGigs;
-		$scope.gigLimit = 2;
+		
 		//$scope.djShopProd = djTShirtBlack;
 		//console.log($scope.djShopProd.img1);
 
@@ -84,7 +85,7 @@ angular.module('RouteController', [])
         });	
 
 
-        console.log(results.date);
+        console.log($scope.gigList.date);
 	})
 
 	.controller('ShopController', function($scope, $location) {
