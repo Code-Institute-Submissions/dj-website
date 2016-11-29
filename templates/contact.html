@@ -1,6 +1,6 @@
-<div>
+<div class="contact-container">
 	<div>
-		<h1>Get in touch</h1>
+		<h1 class="dj-title">Get in touch</h1>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
@@ -14,7 +14,7 @@
 					<div class="form-group">
 						<label>Email</label>
 						<input type="email" name="email" class="form-control" ng-model="contact.email" required>
-						<p ng-show="contactForm.email.$pristine" class="help-block">Please enter your email address</p>
+						<p ng-show="contactForm.email.$pristine" class="help-block">Please enter your email address. Must be a valid email address.</p>
 					</div>
 					<div class="form-group>">
 						<label>Phone</label>
@@ -30,14 +30,9 @@
 						</select>
 					</div>
 					<div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Submit</button>
 					</div>
 				</form>
-			</div>
-			<div class="col-sm-3">
-				<div>
-					<h3>something</h3>
-				</div>
 			</div>
 		</div>
 		

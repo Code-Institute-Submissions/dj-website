@@ -162,14 +162,30 @@ angular.module('RouteController', [])
 		var url = "/data/djContent.json";
 
 		$scope.contents = {};
-        	
+
+		var shuffleArray = function(ary) {
+			var m = ary.length, t, i;
+
+			// While there remain elements to shuffle
+			while (m) {
+				// Pick a remaining element…
+				i = Math.floor(Math.random() * m--);
+
+				// And swap it with the current element.
+				t = ary[m];
+				ary[m] = ary[i];
+				ary[i] = t;
+			}
+		  	console.log(ary);
+		  	return ary;
+		};
+
 		DataService.getData(url , $scope.data).then(function(results) {
-			$scope.contents = results.data.contents;
+			$scope.contents = shuffleArray(results.data.contents);
 			return $scope.contents
         }).catch(function(err) {
             console.log(err);
         });
-
 		
 	})
 

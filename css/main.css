@@ -252,3 +252,13 @@ footer {
 	border-radius: 5px;
 }
 }
+
+/* Contact page */
+
+.contact-container {
+	margin: 0 10px 0 10px;
+}
+
+.dj-title {
+	margin-left: 15px;
+}
