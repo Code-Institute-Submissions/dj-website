@@ -1,23 +1,93 @@
-[
-	{
-		"artist": "High Contrast",
-		"title": "True Colours"
-	},
-	{
-		"artist": "MIST",
-		"title": "Warp 1"
-	},
-	{
-		"artist": "Drumsond & Bassline Smith",
-		"title": "Feel the Sunset"
-	},
-	{
-		"artist": "Mistical",
-		"title": "Mistical Dub Pt 2"
-	},
-	{
-		"artist": "High Contrast",
-		"title": "Make it tonight"
+{ "mixes" : 
+	{ "Mix1" : [
+		{
+			"artist": "High Contrast",
+			"title": "True Colours"
+		},
+		{
+			"artist": "MIST",
+			"title": "Warp 1"
+		},
+		{
+			"artist": "Drumsond & Bassline Smith",
+			"title": "Feel the Sunset"
+		},
+		{
+			"artist": "Mistical",
+			"title": "Mistical Dub Pt 2"
+		},
+		{
+			"artist": "High Contrast",
+			"title": "Make it tonight"
+		}
+		],
+	 "Mix2" : [
+		{
+			"artist": "High Contrast",
+			"title": "True Colours"
+		},
+		{
+			"artist": "MIST",
+			"title": "Warp 1"
+		},
+		{
+			"artist": "Drumsond & Bassline Smith",
+			"title": "Feel the Sunset"
+		},
+		{
+			"artist": "Mistical",
+			"title": "Mistical Dub Pt 2"
+		},
+		{
+			"artist": "High Contrast",
+			"title": "Make it tonight"
+		}
+		],
+	 "Mix3" : [
+		{
+			"artist": "High Contrast",
+			"title": "True Colours"
+		},
+		{
+			"artist": "MIST",
+			"title": "Warp 1"
+		},
+		{
+			"artist": "Drumsond & Bassline Smith",
+			"title": "Feel the Sunset"
+		},
+		{
+			"artist": "Mistical",
+			"title": "Mistical Dub Pt 2"
+		},
+		{
+			"artist": "High Contrast",
+			"title": "Make it tonight"
+		}
+		],
+	"Mix4" : [
+		{
+			"artist": "High Contrast",
+			"title": "True Colours"
+		},
+		{
+			"artist": "MIST",
+			"title": "Warp 1"
+		},
+		{
+			"artist": "Drumsond & Bassline Smith",
+			"title": "Feel the Sunset"
+		},
+		{
+			"artist": "Mistical",
+			"title": "Mistical Dub Pt 2"
+		},
+		{
+			"artist": "High Contrast",
+			"title": "Make it tonight"
+		}
+		]
 	}
 
-	]
+
+}

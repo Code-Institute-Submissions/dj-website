@@ -1,3 +1,48 @@
 <div>
-	<h1>{{title}}</h1>
+	<div>
+		<h1>Get in touch</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-9">
+				<form name="contactForm" ng-submit="submitForm()" novalidate>
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" name="name" class="form-control" ng-model="contact.name" required>
+						<p ng-show="contactForm.name.$pristine" class="help-block">Please enter your name</p>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="email" class="form-control" ng-model="contact.email" required>
+						<p ng-show="contactForm.email.$pristine" class="help-block">Please enter your email address</p>
+					</div>
+					<div class="form-group>">
+						<label>Phone</label>
+						<input type="text" name="phone" class="form-control" ng-model="contact.phone" required>
+						<p ng-show="contactForm.phone.$pristine" class="help-block">Please enter your phone number</p>
+					</div>
+					<div class="form-group">
+						<label>Enquiry type</label>
+						<select class="form-control" name="enquiryType" ng-model="contact.type">
+							<option value="booking">Booking enquiry</option>
+							<option value="remix">Remix enquiry</option>
+							<option value="press">Press enquiry
+						</select>
+					</div>
+					<div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-3">
+				<div>
+					<h3>something</h3>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	 <div class="container">
+		<div related-content></div>
+	</div>
 </div>
