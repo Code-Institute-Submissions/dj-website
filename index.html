@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html ng-app='DjWebsite'>
-<head>
-	<title>DJ Website</title>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>-->
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-</head>
-<body>
+	<head>
+		<title>DJ WebsiteHi</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- navigation directive -->
+		<div dj-nav></div>
 
-	<!-- navigation directive -->
-	<div dj-nav></div>
+		<!-- view directive -->
+		<div ng-view></div>
 
-	<!-- view directive -->
-	<div ng-view></div>
+		<!-- Footer directive -->
+		<div dj-footer></div>
 
-	<!-- Footer directive -->
-	<div dj-footer></div>
-
-<!--<script src="https://cdn.jsdelivr.net/lodash/4.16.6/lodash.min.js"></script>-->
-<script src="js/service.js"></script>
-<script src='js/controller.js'></script>
-<script src='js/directive.js'></script>
-<script src='js/app.js'></script>
-
-
-
-
-</body>
+		<!-- <script src="https://cdn.jsdelivr.net/lodash/4.16.6/lodash.min.js"></script> -->
+		<script src="js/service.js"></script>
+		<script src='js/controller.js'></script>
+		<script src='js/directive.js'></script>
+		<script src='js/app.js'></script>
+		
+	</body>
 
 </html>
