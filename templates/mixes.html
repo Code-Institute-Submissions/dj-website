@@ -6,81 +6,80 @@
 			<p>Check out the latest mixes here</p>
 		</div>
 	</div>
-
 	<!-- Mixes -->
-	<div id="row1" class="row">
-		<div class="col-xs-12 col-md-6">
-			<div class="mix-content-left">
-				<h2>Mix 1</h2>
-				<div class="sc_player">
-					<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-				</div>
-				<div>
-					<button class="ShowTlButton" ng-click="hideTl1()" ng-hide="tracklist1">Hide Tracklist</button>
-					<button class="ShowTlButton" ng-click="showTl1()" ng-hide="!tracklist1">Show Tracklist</button>
-					<div class="tl" ng-hide="tracklist1">
-						<ul>
-							<li class="trackItem" ng-repeat="track in tracks.Mix1">{{track.artist}} - {{track.title}}</li>
-						</ul>					
+	<div class="container">
+		<div id="row1" class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="mix-content-left">
+					<h2>Mix 1</h2>
+					<div class="sc_player">
+						<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 					</div>
-				</div>	
+					<div>
+						<button class="ShowTlButton" ng-click="hideTl1()" ng-hide="tracklist1">Hide Tracklist</button>
+						<button class="ShowTlButton" ng-click="showTl1()" ng-hide="!tracklist1">Show Tracklist</button>
+						<div class="tl" ng-hide="tracklist1">
+							<ul>
+								<li class="trackItem" ng-repeat="track in tracks.Mix1">{{track.artist}} - {{track.title}}</li>
+							</ul>					
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="mix-content-right">
+					<h2>Mix 2</h2>
+					<div class="sc_player">
+						<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					</div>
+					<div>
+						<button class="ShowTlButton" ng-click="hideTl2()" ng-hide="tracklist2">Hide Tracklist</button>
+						<button class="ShowTlButton" ng-click="showTl2()" ng-hide="!tracklist2">Show Tracklist</button>
+						<div class="tl" ng-hide="tracklist2">
+							<ul>
+								<li class="trackItem" ng-repeat="track in tracks.Mix2">{{track.artist}} - {{track.title}}</li>
+							</ul>					
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-6">
-			<div class="mix-content-right">
-				<h2>Mix 2</h2>
-				<div class="sc_player">
-					<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		<div id="row2" class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="mix-content-left">
+					<h2>Mix 3</h2>
+					<div class="sc_player">
+						<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					</div>
+					<div>
+						<button class="ShowTlButton" ng-click="hideTl3()" ng-hide="tracklist3">Hide Tracklist</button>
+						<button class="ShowTlButton" ng-click="showTl3()" ng-hide="!tracklist3">Show Tracklist</button>
+						<div class="tl" ng-hide="tracklist3">
+							<ul>
+								<li class="trackItem" ng-repeat="track in tracks.Mix3">{{track.artist}} - {{track.title}}</li>
+							</ul>					
+						</div>
+					</div>	
 				</div>
-				<div>
-					<button class="ShowTlButton" ng-click="hideTl2()" ng-hide="tracklist2">Hide Tracklist</button>
-					<button class="ShowTlButton" ng-click="showTl2()" ng-hide="!tracklist2">Show Tracklist</button>
-					<div class="tl" ng-hide="tracklist2">
-						<ul>
-							<li class="trackItem" ng-repeat="track in tracks.Mix2">{{track.artist}} - {{track.title}}</li>
-						</ul>					
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="mix-content-right">
+					<h2>Mix 4</h2>
+					<div class="sc_player">
+						<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					</div>
+					<div>
+						<button class="ShowTlButton" ng-click="hideTl4()" ng-hide="tracklist4">Hide Tracklist</button>
+						<button class="ShowTlButton" ng-click="showTl4()" ng-hide="!tracklist4">Show Tracklist</button>
+						<div class="tl" ng-hide="tracklist4">
+							<ul>
+								<li class="trackItem" ng-repeat="track in tracks.Mix4">{{track.artist}} - {{track.title}}</li>
+							</ul>					
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="row2" class="row">
-		<div class="col-xs-12 col-md-6">
-			<div class="mix-content-left">
-				<h2>Mix 3</h2>
-				<div class="sc_player">
-					<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-				</div>
-				<div>
-					<button class="ShowTlButton" ng-click="hideTl3()" ng-hide="tracklist3">Hide Tracklist</button>
-					<button class="ShowTlButton" ng-click="showTl3()" ng-hide="!tracklist3">Show Tracklist</button>
-					<div class="tl" ng-hide="tracklist3">
-						<ul>
-							<li class="trackItem" ng-repeat="track in tracks.Mix3">{{track.artist}} - {{track.title}}</li>
-						</ul>					
-					</div>
-				</div>	
-			</div>
-		</div>
-		<div class="col-xs-12 col-md-6">
-			<div class="mix-content-right">
-				<h2>Mix 4</h2>
-				<div class="sc_player">
-					<iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155289562&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-				</div>
-				<div>
-					<button class="ShowTlButton" ng-click="hideTl4()" ng-hide="tracklist4">Hide Tracklist</button>
-					<button class="ShowTlButton" ng-click="showTl4()" ng-hide="!tracklist4">Show Tracklist</button>
-					<div class="tl" ng-hide="tracklist4">
-						<ul>
-							<li class="trackItem" ng-repeat="track in tracks.Mix4">{{track.artist}} - {{track.title}}</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 </div>
 
